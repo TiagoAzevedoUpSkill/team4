@@ -67,8 +67,22 @@ footer {text-align: center;
 		width: 100%;}
 }
 
+<<<<<<< HEAD
 .Contacts {
 	margin-top: 400px;
 }
 
 /*end footer stuff*/
+=======
+/*end footer stuff*/
+
+/*CATALOGUE*/
+li.card {
+	list-style-type: none;
+    position: relative;
+    height: 400px;
+    width: 800px;
+    perspective: 600px;
+    margin: 20px;
+}
+>>>>>>> a4b21af0763be22ff9406d058de06e574802ada4
