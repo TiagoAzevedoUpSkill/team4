@@ -4,26 +4,27 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="">
     <title>Payment Conditions</title>
-    <script src="../Javascript/myScript.js"></script>
+    <script src="../Javascript/coisaslindas.js"></script>
   </head>
   <body>
     <div>
-      <h1 style="">Check here your payment conditions</h1>
+      <h1>Check here your payment conditions</h1>
       <div>
         <h3> Please inform us to see if you are able to recieve a discount </h3>
-        <p> <b>Adults: </b> <input id="adultnum" type="number"></input></p>
-        <p> <b>Child: </b> <input id="childnum" type="number"></input></p>
-        <p> Season: <select id="chooseseason" name="season">
+        <p> <b>Adults: </b> <input id="adultnum" type="number" min=0 onchange="AdultPromo(); CalculatePromo();"></input></p>
+        <p> <b>Child: </b> <input id="childnum" type="number" min=0 onchange="ChildPromo(); CalculatePromo();"></input></p>
+        <p> Season: <select id="chooseseason" name="season" onchange="SeasonPromo(); CalculatePromo();">
           <datalist id="whichseason">
           <option value="sum">Summer</option>
-          <option value="sum">Spring</option>
+          <option value="spr">Spring</option>
           <option value="win">Winter</option>
           <option value="aut">Autumn</option>
         </datalist>
         </p>
+        </select>
       </div>
       <div>
-        <h2>We can offer you: <span id="discount">Test</span></h2>
+        <h4 id="h401" style="visibility: hidden;">We can offer you: <span id="discount"></span>% <b>discount</b>!</h4>
       </div>
     </div>
   </body>
