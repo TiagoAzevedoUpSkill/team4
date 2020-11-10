@@ -176,6 +176,10 @@ footer {text-align: center;
 /*end footer stuff*/
 
 /*CATALOGUE*/
+.title {
+	font-family:Arial;
+}
+
 .card {
 	display: flex;
 	flex-wrap: wrap;
@@ -184,6 +188,8 @@ footer {text-align: center;
     width: 350px;
     margin: 10px;
     background-size: cover;
+    text-align: center;
+    font-family: Arial;
 }
 
 .offers {
@@ -194,7 +200,82 @@ footer {text-align: center;
 
 li.card {
 	list-style: none;
+	color: white;
+	background-color: white;
+	text-align: center;
+	font-family: Arial;
+}
+
+h2.card {
+	background: rgba(0, 0, 0, 0.75);
+	text-align: center;
+	justify-content: center;
 
 }
 
+.card.city:hover{
+      box-shadow:
+        rgba(white, 0.2) 0 0 40px 5px,
+        rgba(white, 1) 0 0 0 1px,
+        rgba(black, 0.66) 0 30px 60px 0,
+        inset #333 0 0 0 5px,
+        inset white 0 0 0 6px;
+    }
 
+/*FILTER BUTTONS*/
+input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+
+:root {
+  --black: #1a1a1a;
+  --white: #fff;
+  --grey: grey;
+}
+ 
+.filters {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+ 
+.filters * {
+  display: inline-block;
+}
+ 
+.filters label {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.25rem;
+  border-radius: 2rem;
+  min-width: 50px;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+ 
+.filters label:hover {
+  background: var(--green);
+  color: var(--white);
+}
+
+/* FILTERING RULES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+[value="All"]:checked ~ .filters [for="All"],
+[value="north"]:checked ~ .filters [for="north"],
+[value="center"]:checked ~ .filters [for="center"],
+[value="south"]:checked ~ .filters [for="south"],
+[value="algarve"]:checked ~ .filters [for="algarve"]{
+  background: var(--green);
+  color: var(--white);
+}
+
+[value="All"]:checked ~ .posts [data-category] {
+  display: block;
+}
+
+[value="north"]:checked ~ .posts .post:not([data-category~="north"]),
+[value="center"]:checked ~ .posts .post:not([data-category~="center"]),
+[value="south"]:checked ~ .posts .post:not([data-category~="south"]),
+[value="algarve"]:checked ~ .posts .post:not([data-category~="algarve"]){
+  display: none;
+}
