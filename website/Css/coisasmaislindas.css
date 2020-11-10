@@ -5,11 +5,10 @@ body {
 
 
 
-
+.vermelho {color: tomato;
+			text-decoration: line-through;}
 
 /*Menu stuf*/
-
-
 
 
 ul.menu {
@@ -84,6 +83,8 @@ footer {text-align: center;
 		width: 35%;
 		position: relative;
 		z-index: 1500;
+		text-align: center;
+		padding-right: 10%;
 		}
 
 .slider{
