@@ -3,13 +3,13 @@
 function commentTemplate(name, comment) {
   return (
     "<div>" +
-    "Traveller name: " +
+    "<b>Traveller name</b>: " +
     name +
-    "</div>" +
+    "</div><br>" +
     "<div>" +
-    "Comment: " +
+    "<b>Comment</b>: " +
     comment +
-    "</div>"
+    "</div><br>"
   );
 }
 
@@ -27,7 +27,7 @@ function renderComment() {
 // Number of Adults and associate promo with them
 function AdultPromo() {
   var anumb = parseInt(document.getElementById("adultnum").value);
-  if (isNaN(anumb)){
+  if (isNaN(anumb)) {
     anumb = 0;
   }
   if (anumb < 5) {
@@ -42,7 +42,7 @@ function AdultPromo() {
 function ChildPromo() {
   var anum = parseInt(document.getElementById("adultnum").value);
   var cnum = parseInt(document.getElementById("childnum").value);
-  if (isNaN(anum)){
+  if (isNaN(anum)) {
     anum = 0;
   }
   if (cnum >= anum) {
