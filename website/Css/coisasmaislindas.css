@@ -78,15 +78,7 @@ footer {text-align: center;
 
 /*slideshow stuff*/
 
-.flexboxgrid3{	display: flex;
-				flex-wrap: wrap;
-				margin-top: 5%;
-				margin-bottom: 5%;
-				position: absolute;
-				
 
-
-			}
 
 .seila{float:right;
 		width: 35%;
@@ -96,7 +88,7 @@ footer {text-align: center;
 
 .slider{
 	margin-top: 10%;
-
+	margin-left: 5%;
   width: 45%;
   border-radius: 20px;
   overflow: hidden;
