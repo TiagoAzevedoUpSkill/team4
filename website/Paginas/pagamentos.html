@@ -2,29 +2,42 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" type="text/css" href="../css/coisasmaislindas.css">
     <title>Payment Conditions</title>
-    <script src="../Javascript/myScript.js"></script>
+    <script src="../Javascript/coisaslindas.js"></script>
   </head>
   <body>
     <div>
-      <h1 style="">Check here your payment conditions</h1>
       <div>
-        <h3> Please inform us to see if you are able to recieve a discount </h3>
-        <p> <b>Adults: </b> <input id="adultnum" type="number"></input></p>
-        <p> <b>Child: </b> <input id="childnum" type="number"></input></p>
-        <p> Season: <select id="chooseseason" name="season">
-          <datalist id="whichseason">
-          <option value="sum">Summer</option>
-          <option value="sum">Spring</option>
-          <option value="win">Winter</option>
-          <option value="aut">Autumn</option>
-        </datalist>
-        </p>
-      </div>
-      <div>
-        <h2>We can offer you: <span id="discount">Test</span></h2>
+        <ul class="menu">
+        <li id="area-logo"><a href="../index.html">KANDYTRAVEL</a></li>
+        <li class="menu"><a href="../paginas/oferta.html">Catalogue</a></li>
+        <li class="menu"><a href="../paginas/pagamentos.html">Payment Conditions</a></li>
+        <li class="menu"><a href="../paginas/comentarios.html">Comments</a></li>
+        <li class="menu"><a href="../paginas/contatos.html">Contacts</a></li>
+        </ul>
+        </div>
+        <div>
+        <h1 style="margin-top: 80px;">Check here your payment conditions</h1>
+        <div>
+          <h3> Please inform us to see if you are able to recieve a discount </h3>
+          <p> <b>Adults: </b> <input id="adultnum" type="number" min=0 onchange="AdultPromo(); CalculatePromo();"></input></p>
+          <p> <b>Child: </b> <input id="childnum" type="number" min=0 onchange="ChildPromo(); CalculatePromo();"></input></p>
+          <p> Season: <select id="chooseseason" name="season" onchange="SeasonPromo(); CalculatePromo();">
+            <datalist id="whichseason">
+            <option value="sum">Summer</option>
+            <option value="spr">Spring</option>
+            <option value="win">Winter</option>
+            <option value="aut">Autumn</option>
+          </datalist>
+          </p>
+          </select>
+        </div>
+        <div class="slider">
+          <h4 id="h401" style="visibility: hidden; margin: 15px; font-size: 30px;">We can offer you: <span id="discount"></span>% <b>discount</b>!</h4>
+        </div>
       </div>
     </div>
+    <footer> Thank you! And hope you have the best travel wiht us!</footer>
   </body>
 </html>

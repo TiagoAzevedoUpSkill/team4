@@ -7,125 +7,162 @@
 	<link rel="stylesheet" href="../Css/coisasmaislindas.css" />
 </head>
 <body>
-	<h3>TODAY'S DEALS</h3>
+	<ul class="menu">
+		<li id="area-logo">KANDYTRAVEL</li>
+		<div class="marginmenu">
+		<li class="menu"><a href="paginas/oferta.html">Catalogue</a></li>
+		<li class="menu"><a href="paginas/pagamentos.html">Payment Conditions</a></li>
+		<li class="menu"><a href="paginas/comentarios.html">Comments</a></li>
+		<li class="menu"><a href="paginas/contatos.html">Contacts</a></li>
+		</div>	
+    </ul>	
+	<div class="title">
+		<h3>TODAY'S DEALS</h3>
+	</div>
+	<div class="filter">
+		<input type="radio" id="All" name="categories" value="All" checked>
+		<input type="radio" id="north" name="categories" value="north">
+		<input type="radio" id="center" name="categories" value="center">
+		<input type="radio" id="south" name="categories" value="south">
+		<input type="radio" id="algarve" name="categories" value="algarve">
+	
+	<ol class="filters">
+      <li>
+        <label for="All">All</label>
+      </li>
+      <li>
+        <label for="north">North</label>
+      </li>
+      <li>
+        <label for="center">Center</label>
+      </li>
+      <li>
+        <label for="south">South</label>
+      </li>
+      <li>
+        <label for="algarve">Algarve</label>
+      </li>
+    </ol>
+
 	<ul class="offers">
-		<li class="card city" style="background-image: url(../assets/city_braganca.jpg);">
-        	<div id="bragança" class="card north">
+		<li class="card city" data-category="north" style="background-image: url(../assets/city_braganca.jpg);">
+        	<div id="bragança" class="card north" data-category="north">
            		<h2>Bragança</h2>
             	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
     	</li>
-    	<li class="card city" class="card north" style="background-image: url(../assets/city_braga.jpg); background-repeat: no-repeat;">
-        	<div id="braga">
+    	<li class="card city" data-category="north" style="background-image: url(../assets/city_braga.jpg); background-repeat: no-repeat;">
+        	<div id="braga" class="card north" data-category="north">
            		<h2>Braga</h2>
             	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
     	</li>
-    	<li class="card city" class="card north" style="background-image: url(../assets/city_viana.jpg); background-repeat: no-repeat;">
-        	<div id="viana">
+    	<li class="card city" data-category="north" style="background-image: url(../assets/city_viana.jpg); background-repeat: no-repeat;">
+        	<div id="viana" class="card north" data-category="north">
            		<h2>Viana</h2>
             	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
     	</li>
-    	<li class="card city" class="card north" style="background-image: url(../assets/city_porto.jpg); background-repeat: no-repeat;">
-        	<div id="porto">
+    	<li class="card city" data-category="north" style="background-image: url(../assets/city_porto.jpg); background-repeat: no-repeat;">
+        	<div id="porto" class="card north" data-category="north">
            		<h2>Porto</h2>
             	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
     	</li>
-    	<li class="card city" class="card north" style="background-image: url(../assets/city_mirandela.jpg); background-repeat: no-repeat;">
-        	<div id="mirandela">
+    	<li class="card city" data-category="north" style="background-image: url(../assets/city_mirandela.jpg); background-repeat: no-repeat;">
+        	<div id="mirandela" class="card north" data-category="north">
            		<h2>Mirandela</h2>
             	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
     	</li>
 
-    	<li class="card city" class="card center" style="background-image: url(../assets/city_coimbra.jpg); background-repeat: no-repeat;">
-        	<div id="coimbra">
+    	<li class="card city" data-category="center" style="background-image: url(../assets/city_coimbra.jpg); background-repeat: no-repeat;">
+        	<div id="coimbra" class="card center" data-category="center">
            		<h2>Coimbra</h2>
             	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
     	</li>
-    	<li class="card city" class="card center" style="background-image: url(../assets/city_leiria.jpg); background-repeat: no-repeat;">
-        	<div id="leiria">
+    	<li class="card city" data-category="center" style="background-image: url(../assets/city_leiria.jpg); background-repeat: no-repeat;">
+        	<div id="leiria" class="card center" data-category="center">
            		<h2>Leiria</h2>
             	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
     	</li>
-    	<li class="card city" class="card center" style="background-image: url(../assets/city_aveiro.jpg);background-repeat: no-repeat;">
-        	<div id="aveiro">
+    	<li class="card city"data-category="center" style="background-image: url(../assets/city_aveiro.jpg);background-repeat: no-repeat;">
+        	<div id="aveiro" class="card center" data-category="center">
            		<h2>Aveiro</h2>
             	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
     	</li>
-    	<li class="card city" class="card center" style="background-image: url(../assets/city_covilha.jpg);background-repeat: no-repeat;">
-        	<div id="covilha">
+    	<li class="card city" data-category="center" style="background-image: url(../assets/city_covilha.jpg);background-repeat: no-repeat;" data-category="center">
+        	<div id="covilha" class="card center" >
            		<h2>Covilhã</h2>
             	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
     	</li>
-    	<li class="card city" class="card north" style="background-image: url(../assets/city_viseu.jpg);background-repeat: no-repeat;">
-        	<div id="viseu">
+    	<li class="card city" data-category="center" style="background-image: url(../assets/city_viseu.jpg);background-repeat: no-repeat;" data-category="center" >
+        	<div id="viseu" class="card center" >
            		<h2>Viseu</h2>
             	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
     	</li>
 
-    	<li class="card city" class="card south" style="background-image: url(../assets/city_lisboa.jpg);background-repeat: no-repeat;">
-        	<div id="lisboa">
+    	<li class="card city" data-category="south" style="background-image: url(../assets/city_lisboa.jpg);background-repeat: no-repeat;" data-category="south" >
+        	<div id="lisboa" class="card south" >
            		<h2>Lisboa</h2>
             	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
     	</li>
-    	<li class="card city" class="card south" style="background-image: url(../assets/city_setubal.jpg);background-repeat: no-repeat;">
-        	<div id="setúbal">
+    	<li class="card city" data-category="south" style="background-image: url(../assets/city_setubal.jpg);background-repeat: no-repeat;" data-category="south" >
+        	<div id="setúbal" class="card south" data-category="south">
            		<h2>Setubal</h2>
             	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
     	</li>
-    	<li class="card city" class="card south" style="background-image: url(../assets/city_beja.jpg);background-repeat: no-repeat;">
-        	<div id="beja">
+    	<li class="card city" data-category="south" style="background-image: url(../assets/city_beja.jpg);background-repeat: no-repeat;" data-category="south" >
+        	<div id="beja" class="card south" data-category="south">
            		<h2>Beja</h2>
             	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
     	</li>
-    	<li class="card city" class="card south" style="background-image: url(../assets/city_portalegre.jpg);background-repeat: no-repeat;">
-        	<div id="portalegre">
+    	<li class="card city" data-category="south" style="background-image: url(../assets/city_portalegre.jpg);background-repeat: no-repeat;">
+        	<div id="portalegre" class="card south" data-category="south" >
            		<h2>Portalegre</h2>
             	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
     	</li>
-    	<li class="card city" class="card south" style="background-image: url(../assets/city_evora.jpg);background-repeat: no-repeat;">
-        	<div id="evora">
+    	<li class="card city" data-category="south" style="background-image: url(../assets/city_evora.jpg);background-repeat: no-repeat;">
+        	<div id="evora" class="card south" data-category="south" >
            		<h2>Évora</h2>
             	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
     	</li>
 
-    	<li class="card city" class="card algarve" style="background-image: url(../assets/city_silves.jpg);background-repeat: no-repeat;">
-        	<div id="silves">
+    	<li class="card city" data-category="algarve" style="background-image: url(../assets/city_silves.jpg);background-repeat: no-repeat;">
+        	<div id="silves" class="card algarve" data-category="algarve" >
            		<h2>Silves</h2>
             	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
     	</li>
-    	<li class="card city" class="card algarve" style="background-image: url(../assets/city_portimao.jpg);background-repeat: no-repeat;">
-        	<div id="Portimao">
+    	<li class="card city" data-category="algarve" style="background-image: url(../assets/city_portimao.jpg);background-repeat: no-repeat;">
+        	<div id="Portimao" class="card algarve" data-category="algarve"  >
            		<h2>Portimão</h2>
             	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
     	</li>
-    	<li class="card city" class="card algarve" style="background-image: url(../assets/city_olhao.jpg);background-repeat: no-repeat;">
-        	<div id="olhao">
+    	<li class="card city" data-category="algarve" style="background-image: url(../assets/city_olhao.jpg);background-repeat: no-repeat;">
+        	<div id="olhao"  class="card algarve" data-category="algarve" >
            		<h2>Olhão</h2>
             	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
     	</li>
-    	<li class="card city" class="card algarve" style="background-image: url(../assets/city_braganca.jpg);background-repeat: no-repeat;">
-        	<div id="tavira">
+    	<li class="card city" data-category="algarve"  style="background-image: url(../assets/city_tavira.jpg);background-repeat: no-repeat;">
+        	<div id="tavira" class="card algarve" data-category="algarve"  >
            		<h2>Tavira</h2>
             	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
     	</li>
 	</ul>
+	<footer> Thank you! And hope you have the best travel wiht us!</footer>
 </body>
 </html>
