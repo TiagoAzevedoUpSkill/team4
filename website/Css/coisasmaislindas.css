@@ -165,14 +165,21 @@ footer {text-align: center;
 	display: flex;
 	flex-wrap: wrap;
     position: relative;
-    height: 400px;
-    width: 400px;
-    margin: 20px;
+    height: 300px;
+    width: 350px;
+    margin: 10px;
     background-size: cover;
+}
+
+.offers {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 li.card {
 	list-style: none;
+
 }
 
 
