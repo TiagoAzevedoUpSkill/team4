@@ -63,6 +63,10 @@ footer {text-align: center;
 		width: 100%;}
 }
 
+.Contacts {
+	margin-top: 400px;
+}
+
 /*end footer stuff*/
 
 /*CATALOGUE*/
@@ -79,3 +83,4 @@ footer {text-align: center;
 li.card {
 	list-style: none;
 }
+
