@@ -1,6 +1,5 @@
 
 
-
 body {
 	font-size: 1em;}
 
@@ -154,3 +153,26 @@ footer {text-align: center;
 
 
 /*end of slideshow*/
+
+.Contacts {
+	margin-top: 400px;
+}
+
+/*end footer stuff*/
+
+/*CATALOGUE*/
+.card {
+	display: flex;
+	flex-wrap: wrap;
+    position: relative;
+    height: 400px;
+    width: 800px;
+    perspective: 600px;
+    margin: 20px;
+}
+
+li.card {
+	list-style: none;
+}
+
+

@@ -4,16 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/website/Css/coisasmaislindas.css" />
+    <script src="../Javascript/coisaslindas.js"></script>
     <title>KandyTravel</title>
   </head>
+
   <body>
     <h2>Leave us your reviews and ideas!</h2>
-    <form>
-      <label for="name">Name:</label><br />
-      <input type="text" id="name" /><br />
-      <label for="name">Comment</label><br />
-      <input type="text" id="comment" /><br />
-      <input type="submit" value="Send" />
-    </form>
+    <div>
+      <form id="form_divs">
+        <label for="name">Name:</label><br />
+        <input
+          type="text"
+          onsubmit="getName()"
+          id="myName"
+          placeholder="Enter Name Here"
+        /><br />
+        <label for="name">Comment</label><br />
+        <input type="text" id="comment" /><br />
+        <input type="submit" onclick="formName()" value="Send" />
+      </form>
+      <div id="text_name"></div>
+      <button id="copyName" value="OLAAAAA"></button>
+
+      <input type="text" id="myText" placeholder="Enter Name Here" />
+      <div id="text2"></div>
+      <button
+        id="copyName"
+        onclick="document.querySelector('#text2').innerHTML = document.querySelector('#myText').value"
+        value="Copy Name"
+      ></button>
+    </div>
   </body>
 </html>
