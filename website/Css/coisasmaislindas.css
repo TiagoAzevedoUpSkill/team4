@@ -1,7 +1,9 @@
 
 
 body {
-	font-size: 1em;}
+	font-size: 1em;
+	background: -webkit-linear-gradient(to left,#faf59a,#dfd18e);
+background: linear-gradient(to left,#faf59a,#dfd18e);  }
 
 
 
@@ -27,6 +29,9 @@ ul.menu {
 			margin-left: 30px;
 			text-decoration: line-through;
 			}	
+
+#area-logo a{text-decoration: none;
+			color: black;}			
 
 .marginmenu { margin-right: 100px; }
 li.menu {
@@ -60,7 +65,8 @@ footer {text-align: center;
 		bottom: 0;
 		color: grey;
 		font-size: 1.2em;
-		width: 100%;}
+		width: 100%;
+		padding-bottom: 1%}
 }
 
 /*end footer stuff*/

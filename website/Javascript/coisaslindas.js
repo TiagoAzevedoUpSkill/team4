@@ -1,78 +1,71 @@
 // Get name and comment and have a comment showing in the page
 // Comment Template Generator
-function commentTemplate() {}
+function commentTemplate(name, comment) {
+  return (
+    "<div>" +
+    "Traveller name: " +
+    name +
+    "</div>" +
+    "<div>" +
+    "Comment: " +
+    comment +
+    "</div>"
+  );
+}
 
 // Get info from Forms
-function getName() {
-  console.log("Olá!");
-  document.querySelector("#text_name").innerHTML = document.querySelector(
-    "#myName"
-  ).value;
+
+function renderComment() {
+  var name = document.querySelector("#myName").value;
+  var comment = document.querySelector("#myComment").value;
+  document.querySelector("#comment_card").innerHTML = commentTemplate(
+    name,
+    comment
+  );
 }
-
-function getComment() {
-  document.querySelector("#text_comment").innerHTML = document.querySelector(
-    "#myComment"
-  ).value;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Number of Adults and associate promo with them
-function AdultPromo(){
+function AdultPromo() {
   var anumb = parseInt(document.getElementById("adultnum").value);
-  if (anumb < 5){
+  if (isNaN(anumb)){
+    anumb = 0;
+  }
+  if (anumb < 5) {
     return 0;
-  } else  if (anumb >= 5 && anumb < 10){
+  } else if (anumb >= 5 && anumb < 10) {
     return 10;
-  } else if (anumb >= 10){
+  } else if (anumb >= 10) {
     return 15;
   }
 }
 // Number of Chils and promo associate with them
-function ChildPromo(){
+function ChildPromo() {
   var anum = parseInt(document.getElementById("adultnum").value);
   var cnum = parseInt(document.getElementById("childnum").value);
-  if (cnum >= anum ){
+  if (isNaN(anum)){
+    anum = 0;
+  }
+  if (cnum >= anum) {
     return 10;
   }
   return 0;
 }
 
-function SeasonPromo(){
-  var season = document.getElementById('chooseseason').value;
-  if (season == "spr" || season == "aut"){
+function SeasonPromo() {
+  var season = document.getElementById("chooseseason").value;
+  if (season == "spr" || season == "aut") {
     return 5;
   } else if (season == "sum") {
     return 0;
-  } else if (season == "win"){
+  } else if (season == "win") {
     return 10;
   }
 }
 
-function CalculatePromo(){
+function CalculatePromo() {
   var promo = AdultPromo() + ChildPromo() + SeasonPromo();
-  if (promo != 0){
+  if (promo != 0) {
     document.getElementById("h401").style.visibility = "visible";
   }
-  document.getElementById('discount').innerHTML = promo;
+  document.getElementById("discount").innerHTML = promo;
 }
