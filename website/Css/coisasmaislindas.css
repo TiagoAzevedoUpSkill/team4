@@ -12,7 +12,7 @@ background: linear-gradient(to left,#faf59a,#dfd18e);  }
 }
 
 @font-face {
-	font-family:Regular;
+	font-family: Regular;
 	src: url(font/Prime-Regular.otf);
 }
 
@@ -33,7 +33,7 @@ ul.menu {
   position: fixed;
   top: 0;
   z-index: 10000000;
-  font-family: regulear;
+  font-family: Regular;
 
 }
 
@@ -140,7 +140,7 @@ footer {text-align: center;
 		position: relative;
 		z-index: 1500;
 		text-align: center;
-		font-family: light;
+		font-family: Light;
 		margin-right: 10%;
 		background-color:rgba(250,250,250,0.5);
 		}
