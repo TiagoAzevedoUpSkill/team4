@@ -28,6 +28,9 @@ ul.menu {
 			text-decoration: line-through;
 			}	
 
+#area-logo a{text-decoration: none;
+			color: black;}			
+
 .marginmenu { margin-right: 100px; }
 li.menu {
  	float: right;
