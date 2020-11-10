@@ -29,8 +29,9 @@ ul.menu {
 #area-logo {float: left;
 			padding: 18px 0px 0px 0px ;
 			margin-left: 30px;
+			text-decoration: line-through;
 			}	
-#area-logo a{text-decoration: none;}
+
 
 li.menu {
  	float: right;
@@ -52,6 +53,22 @@ li.menu a:hover {
 
 }
 
+/*end menu stuff*/
+
+/*footer stuff*/
+
+footer {text-align: center;
+		position: fixed;
+		background-color:rgba(0,0,0,0);
+		text-shadow: 0px 4px 8px  rgba(0, 0, 0, 0.7);
+		bottom: 0;
+		color: red;
+		font-size: 1.2em;
+		width: 100%;}
+}
+
+/*end footer stuff*/
+
 /*CATALOGUE*/
 li.card {
 	list-style-type: none;
@@ -61,4 +78,3 @@ li.card {
     perspective: 600px;
     margin: 20px;
 }
-
