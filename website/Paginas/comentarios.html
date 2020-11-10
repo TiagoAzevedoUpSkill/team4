@@ -13,26 +13,21 @@
     <div>
       <form id="form_divs">
         <label for="name">Name:</label><br />
+        <input type="text" id="myName" placeholder="Enter Name Here" /><br />
+        <label for="name">Comment</label><br />
         <input
           type="text"
-          onsubmit="getName()"
-          id="myName"
-          placeholder="Enter Name Here"
+          id="myComment"
+          placeholder="Enter your Comment Here"
         /><br />
-        <label for="name">Comment</label><br />
-        <input type="text" id="comment" /><br />
-        <input type="submit" onclick="formName()" value="Send" />
       </form>
-      <div id="text_name"></div>
-      <button id="copyName" value="OLAAAAA"></button>
-
-      <input type="text" id="myText" placeholder="Enter Name Here" />
-      <div id="text2"></div>
       <button
         id="copyName"
-        onclick="document.querySelector('#text2').innerHTML = document.querySelector('#myText').value"
-        value="Copy Name"
+        onclick="getName(); getComment()"
+        value="OLA EU SOU UM BOTAO"
       ></button>
+      <div id="text_name"></div>
+      <div id="text_comment"></div>
     </div>
   </body>
 </html>
