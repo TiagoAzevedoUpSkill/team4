@@ -1,7 +1,9 @@
 
 
 body {
-	font-size: 1em;}
+	font-size: 1em;
+	background: -webkit-linear-gradient(to left,#f8b3a5,#dfd18e);
+background: linear-gradient(to left,#f8b3a5,#dfd18e); }
 
 
 
