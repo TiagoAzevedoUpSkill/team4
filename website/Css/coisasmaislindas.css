@@ -175,6 +175,7 @@ footer {text-align: center;
 /*CATALOGUE*/
 .title {
 	font-family:Arial;
+	margin-top: 100px;
 }
 
 .card {
@@ -241,19 +242,30 @@ input[type="radio"] {
 }
  
 .filters label {
-  padding: 0.5rem 1rem;
-  margin-bottom: 0.25rem;
-  border-radius: 2rem;
-  min-width: 50px;
-  line-height: normal;
-  cursor: pointer;
-  transition: all 0.1s;
+	text-align: left;
+	padding: 0.5rem 1rem;
+	margin-top: 20px;
+	margin-bottom: 0.25rem;
+	border-radius: 2rem;
+	min-width: 50px;
+	line-height: normal;
+	cursor: pointer;
+	transition: all 0.1s;
 }
  
 .filters label:hover {
   background: var(--green);
   color: var(--white);
+   background-color: silver ;
 }
+
+.filters label:clicked {
+  background: var(--green);
+  color: var(--black);
+   background-color: silver ;
+}
+
+
 
 /* FILTERING RULES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -262,17 +274,17 @@ input[type="radio"] {
 [value="center"]:checked ~ .filters [for="center"],
 [value="south"]:checked ~ .filters [for="south"],
 [value="algarve"]:checked ~ .filters [for="algarve"]{
-  background: var(--green);
+  background: var(--black);
   color: var(--white);
 }
 
-[value="All"]:checked ~ .posts [data-category] {
+[value="All"]:checked ~ .offers [data-category] {
   display: block;
 }
 
-[value="north"]:checked ~ .posts .post:not([data-category~="north"]),
-[value="center"]:checked ~ .posts .post:not([data-category~="center"]),
-[value="south"]:checked ~ .posts .post:not([data-category~="south"]),
-[value="algarve"]:checked ~ .posts .post:not([data-category~="algarve"]){
+[value="north"]:checked ~ .offers .card:not([data-category~="north"]),
+[value="center"]:checked ~ .offers .card:not([data-category~="center"]),
+[value="south"]:checked ~ .offers .card:not([data-category~="south"]),
+[value="algarve"]:checked ~ .offers .card:not([data-category~="algarve"]){
   display: none;
 }
