@@ -4,16 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/website/Css/coisasmaislindas.css" />
+    <script src="../Javascript/coisaslindas.js"></script>
     <title>KandyTravel</title>
   </head>
+
   <body>
     <h2>Leave us your reviews and ideas!</h2>
-    <form>
-      <label for="name">Name:</label><br />
-      <input type="text" id="name" /><br />
-      <label for="name">Comment</label><br />
-      <input type="text" id="comment" /><br />
-      <input type="submit" value="Send" />
-    </form>
+    <div>
+      <form id="form_divs">
+        <label for="name">Name:</label><br />
+        <input type="text" id="myName" placeholder="Enter Name Here" /><br />
+        <label for="name">Comment</label><br />
+        <input
+          type="text"
+          id="myComment"
+          placeholder="Enter your Comment Here"
+        /><br />
+      </form>
+      <button
+        id="copyName"
+        onclick="getName(); getComment()"
+        value="OLA EU SOU UM BOTAO"
+      ></button>
+      <div id="text_name"></div>
+      <div id="text_comment"></div>
+    </div>
   </body>
 </html>
