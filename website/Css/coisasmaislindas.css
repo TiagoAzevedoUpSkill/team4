@@ -2,7 +2,9 @@
 
 body {
 	font-size: 1em;
-	background-color: #3c6e71;  }
+	background: -webkit-linear-gradient(to left,#faf59a,#dfd18e);
+background: linear-gradient(to left,#faf59a,#dfd18e);  
+}
 
 
 @font-face {
@@ -101,35 +103,60 @@ footer {text-align: center;
 }
 
 .closebutton {
-  font-size: 25px;
+
+    font-size: 30px;
+
     margin-left: 15px;
-    color: #1C2B2D;
     font-weight: bold;
     float: right;
-    font-size: 40px;
+
+    font-size: 1.8em;
+
     line-height: 10px;
     cursor: pointer;
-    transition: 0.8s;
   }
 
 .covid-problems {
+
   padding: 50px;
+  font-size: 1em;
+
+  padding: 20px;
   font-size: 12px;
+
   line-height: 20px;
   font-family: 'Work-Sans', sans-serif;
+  margin-right: 200px;
+  margin-left: 200px;
+  background-color: #003049;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 30px;
 }
 
-.Contacts-Page {
-  background-image: linear-gradient(#fefedf,#fcf8ff);
-  color:black;
-}
-.Contacts-Page, p {
-  font-size: 20px;
+.Contacts {
+  padding: 60px;
 }
 
-/*end footer stuff*/
+.Contacts-Page p {
+  font-size: 1.2em;
+}
 
-/*slideshow stuff*/
+.mail-style {
+  text-decoration: none;
+  
+
+}
+
+
+.maps {
+  align-content: center;
+}
+
+
+
+
+
 
 
 
@@ -223,20 +250,8 @@ footer {text-align: center;
 
 /*end of slideshow*/
 
-.Contacts {
-  padding: 60px;
-}
 
-.mail-style {
-  text-decoration: none;
-  
-}
 
-.maps {
-  align-content: center;
-}
-
-/*end footer stuff*/
 
 /*CATALOGUE*/
 .title {
@@ -380,3 +395,8 @@ input[type="radio"] {
 [value="algarve"]:checked ~ .offers .card:not([data-category~="algarve"]){
   display: none;
 }
+
+
+
+
+.paraficarjoia {width: 90%;}
