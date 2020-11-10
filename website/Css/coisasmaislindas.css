@@ -2,8 +2,7 @@
 
 body {
 	font-size: 1em;
-	background: -webkit-linear-gradient(to left,#faf59a,#dfd18e);
-background: linear-gradient(to left,#faf59a,#dfd18e);  }
+	background-color: #3c6e71;  }
 
 
 @font-face {
@@ -246,28 +245,48 @@ footer {text-align: center;
 }
 
 .card {
-	display: flex;
-	flex-wrap: wrap;
+	color: white;
+    flex-wrap: wrap;
     position: relative;
     height: 300px;
-    width: 350px;
-    margin: 10px;
+    width: 300px;
+    margin: 20px;
     background-size: cover;
     text-align: center;
     font-family: Arial;
+    display: inline-block;
+    max-width: 25rem;
+    margin: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    overflow: hidden;
+    box-shadow: 0 0 3rem rgba(0,0,0,0.8);
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+}
+
+.card-description > h2 {
+	margin: 0 0 0.5em;
+}
+
+.card:hover {
+	transform: translateY(-0.5rem) scale(1.0125);
+	box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
 }
 
 .offers {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	padding-inline-start: 0px;
 }
 
 li.card {
-	list-style: none;
-	color: white;
-	background-color: white;
+	display: block;
+	margin: 1rem auto;
+	padding: 0;
+	font-size: 0;
 	text-align: center;
+	list-style: none;
 	font-family: Arial;
 }
 
@@ -277,10 +296,10 @@ margin-top: 20px;
     text-align: center;
     justify-content: center;
     margin: initial;
-    width: 80%;
+    margin-right: 20px;
     padding: 24px;
     margin-right: 38px;
-
+    display: table;
 }
 
 .card.city:hover{
@@ -314,6 +333,7 @@ input[type="radio"] {
 }
  
 .filters label {
+	font-family: Arial;
 	text-align: left;
 	padding: 0.5rem 1rem;
 	margin-top: 20px;
