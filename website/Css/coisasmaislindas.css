@@ -270,10 +270,15 @@ li.card {
 	font-family: Arial;
 }
 
-h2.card {
-	background: rgba(0, 0, 0, 0.75);
-	text-align: center;
-	justify-content: center;
+h2 {
+margin-top: 20px;
+    background: rgba(0, 0, 0, 0.50);
+    text-align: center;
+    justify-content: center;
+    margin: initial;
+    width: 80%;
+    padding: 24px;
+    margin-right: 38px;
 
 }
 
