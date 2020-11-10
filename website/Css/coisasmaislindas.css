@@ -8,7 +8,10 @@ body {
 
 
 /*Menu stuf*/
-
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
 
 
 
@@ -72,6 +75,33 @@ footer {text-align: center;
   	margin-left: 150px;
   	margin-right: 150px;
 
+}
+
+.closebutton {
+  font-size: 25px;
+    margin-left: 15px;
+    color: #1C2B2D;
+    font-weight: bold;
+    float: right;
+    font-size: 40px;
+    line-height: 10px;
+    cursor: pointer;
+    transition: 0.8s;
+  }
+
+.covid-problems {
+  padding: 50px;
+  font-size: 12px;
+  line-height: 20px;
+  font-family: 'Work-Sans', sans-serif;
+}
+
+.Contacts-Page {
+  background-image: linear-gradient(#fefedf,#fcf8ff);
+  color:black;
+}
+.Contacts-Page, p {
+  font-size: 20px;
 }
 
 /*end footer stuff*/
@@ -166,7 +196,16 @@ footer {text-align: center;
 /*end of slideshow*/
 
 .Contacts {
-	margin-top: 400px;
+  padding: 60px;
+}
+
+.mail-style {
+  text-decoration: none;
+  
+}
+
+.maps {
+  align-content: center;
 }
 
 /*end footer stuff*/
