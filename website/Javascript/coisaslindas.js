@@ -40,7 +40,9 @@ function getComment() {
 // Number of Adults and associate promo with them
 function AdultPromo(){
   var anumb = parseInt(document.getElementById("adultnum").value);
-  if (anumb >= 5 && anumb < 10){
+  if (anumb < 5){
+    return 0;
+  } else  if (anumb >= 5 && anumb < 10){
     return 10;
   } else if (anumb >= 10){
     return 15;
@@ -50,9 +52,10 @@ function AdultPromo(){
 function ChildPromo(){
   var anum = parseInt(document.getElementById("adultnum").value);
   var cnum = parseInt(document.getElementById("childnum").value);
-  while (cnum > anum ){
+  if (cnum >= anum ){
     return 10;
   }
+  return 0;
 }
 
 function SeasonPromo(){
@@ -68,5 +71,8 @@ function SeasonPromo(){
 
 function CalculatePromo(){
   var promo = AdultPromo() + ChildPromo() + SeasonPromo();
+  if (promo != 0){
+    document.getElementById("h401").style.visibility = "visible";
+  }
   document.getElementById('discount').innerHTML = promo;
 }
