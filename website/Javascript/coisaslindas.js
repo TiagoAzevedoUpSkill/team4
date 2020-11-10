@@ -27,6 +27,9 @@ function renderComment() {
 // Number of Adults and associate promo with them
 function AdultPromo() {
   var anumb = parseInt(document.getElementById("adultnum").value);
+  if (isNaN(anumb)){
+    anumb = 0;
+  }
   if (anumb < 5) {
     return 0;
   } else if (anumb >= 5 && anumb < 10) {
@@ -39,6 +42,9 @@ function AdultPromo() {
 function ChildPromo() {
   var anum = parseInt(document.getElementById("adultnum").value);
   var cnum = parseInt(document.getElementById("childnum").value);
+  if (isNaN(anum)){
+    anum = 0;
+  }
   if (cnum >= anum) {
     return 10;
   }

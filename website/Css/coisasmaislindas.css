@@ -11,7 +11,10 @@ background: linear-gradient(to left,#faf59a,#dfd18e);  }
 			text-decoration: line-through;}
 
 /*Menu stuf*/
-
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
 
 ul.menu {
   list-style-type: none;
@@ -86,6 +89,33 @@ footer {text-align: center;
   	margin-left: 150px;
   	margin-right: 150px;
 
+}
+
+.closebutton {
+  font-size: 25px;
+    margin-left: 15px;
+    color: #1C2B2D;
+    font-weight: bold;
+    float: right;
+    font-size: 40px;
+    line-height: 10px;
+    cursor: pointer;
+    transition: 0.8s;
+  }
+
+.covid-problems {
+  padding: 50px;
+  font-size: 12px;
+  line-height: 20px;
+  font-family: 'Work-Sans', sans-serif;
+}
+
+.Contacts-Page {
+  background-image: linear-gradient(#fefedf,#fcf8ff);
+  color:black;
+}
+.Contacts-Page, p {
+  font-size: 20px;
 }
 
 /*end footer stuff*/
@@ -185,7 +215,16 @@ footer {text-align: center;
 /*end of slideshow*/
 
 .Contacts {
-	margin-top: 400px;
+  padding: 60px;
+}
+
+.mail-style {
+  text-decoration: none;
+  
+}
+
+.maps {
+  align-content: center;
 }
 
 /*end footer stuff*/
@@ -193,6 +232,7 @@ footer {text-align: center;
 /*CATALOGUE*/
 .title {
 	font-family:Arial;
+	margin-top: 100px;
 }
 
 .card {
@@ -259,19 +299,30 @@ input[type="radio"] {
 }
  
 .filters label {
-  padding: 0.5rem 1rem;
-  margin-bottom: 0.25rem;
-  border-radius: 2rem;
-  min-width: 50px;
-  line-height: normal;
-  cursor: pointer;
-  transition: all 0.1s;
+	text-align: left;
+	padding: 0.5rem 1rem;
+	margin-top: 20px;
+	margin-bottom: 0.25rem;
+	border-radius: 2rem;
+	min-width: 50px;
+	line-height: normal;
+	cursor: pointer;
+	transition: all 0.1s;
 }
  
 .filters label:hover {
   background: var(--green);
   color: var(--white);
+   background-color: silver ;
 }
+
+.filters label:clicked {
+  background: var(--green);
+  color: var(--black);
+   background-color: silver ;
+}
+
+
 
 /* FILTERING RULES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -280,17 +331,17 @@ input[type="radio"] {
 [value="center"]:checked ~ .filters [for="center"],
 [value="south"]:checked ~ .filters [for="south"],
 [value="algarve"]:checked ~ .filters [for="algarve"]{
-  background: var(--green);
+  background: var(--black);
   color: var(--white);
 }
 
-[value="All"]:checked ~ .posts [data-category] {
+[value="All"]:checked ~ .offers [data-category] {
   display: block;
 }
 
-[value="north"]:checked ~ .posts .post:not([data-category~="north"]),
-[value="center"]:checked ~ .posts .post:not([data-category~="center"]),
-[value="south"]:checked ~ .posts .post:not([data-category~="south"]),
-[value="algarve"]:checked ~ .posts .post:not([data-category~="algarve"]){
+[value="north"]:checked ~ .offers .card:not([data-category~="north"]),
+[value="center"]:checked ~ .offers .card:not([data-category~="center"]),
+[value="south"]:checked ~ .offers .card:not([data-category~="south"]),
+[value="algarve"]:checked ~ .offers .card:not([data-category~="algarve"]){
   display: none;
 }
