@@ -102,12 +102,12 @@ footer {text-align: center;
 }
 
 .closebutton {
-  font-size: 25px;
+ 
     margin-left: 15px;
     color: #1C2B2D;
     font-weight: bold;
     float: right;
-    font-size: 40px;
+    font-size: 1.8em;
     line-height: 10px;
     cursor: pointer;
     transition: 0.8s;
@@ -115,7 +115,7 @@ footer {text-align: center;
 
 .covid-problems {
   padding: 50px;
-  font-size: 12px;
+  font-size: 1em;
   line-height: 20px;
   font-family: 'Work-Sans', sans-serif;
 }
@@ -124,8 +124,8 @@ footer {text-align: center;
   background-image: linear-gradient(#fefedf,#fcf8ff);
   color:black;
 }
-.Contacts-Page, p {
-  font-size: 20px;
+.Contacts-Page p {
+  font-size: 1.2em;
 }
 
 
@@ -359,3 +359,8 @@ input[type="radio"] {
 [value="algarve"]:checked ~ .offers .card:not([data-category~="algarve"]){
   display: none;
 }
+
+
+
+
+.paraficarjoia {width: 90%;}
