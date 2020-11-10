@@ -3,7 +3,8 @@
 body {
 	font-size: 1em;
 	background: -webkit-linear-gradient(to left,#faf59a,#dfd18e);
-background: linear-gradient(to left,#faf59a,#dfd18e);  }
+background: linear-gradient(to left,#faf59a,#dfd18e);  
+}
 
 
 @font-face {
@@ -102,31 +103,42 @@ footer {text-align: center;
 }
 
 .closebutton {
-  font-size: 25px;
+    font-size: 30px;
     margin-left: 15px;
-    color: #1C2B2D;
     font-weight: bold;
     float: right;
-    font-size: 40px;
     line-height: 10px;
     cursor: pointer;
-    transition: 0.8s;
   }
 
 .covid-problems {
-  padding: 50px;
+  padding: 20px;
   font-size: 12px;
   line-height: 20px;
   font-family: 'Work-Sans', sans-serif;
+  margin-right: 200px;
+  margin-left: 200px;
+  background-color: #003049;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 30px;
 }
 
-.Contacts-Page {
-  background-image: linear-gradient(#fefedf,#fcf8ff);
-  color:black;
+.Contacts {
+  padding: 60px;
 }
-.Contacts-Page, p {
-  font-size: 20px;
+
+.mail-style {
+  text-decoration: none;
+  
 }
+
+.maps {
+  align-content: center;
+}
+
+
+
 
 /*end footer stuff*/
 
@@ -224,18 +236,7 @@ footer {text-align: center;
 
 /*end of slideshow*/
 
-.Contacts {
-  padding: 60px;
-}
 
-.mail-style {
-  text-decoration: none;
-  
-}
-
-.maps {
-  align-content: center;
-}
 
 /*end footer stuff*/
 
