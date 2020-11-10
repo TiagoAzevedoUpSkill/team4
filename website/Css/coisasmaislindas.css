@@ -1,7 +1,3 @@
-*{margin: 0;
-padding: 0;}
-
-
 
 body {
 	font-size: 1em;}
@@ -70,11 +66,16 @@ footer {text-align: center;
 /*end footer stuff*/
 
 /*CATALOGUE*/
-li.card {
-	list-style-type: none;
+.card {
+	display: flex;
+	flex-wrap: wrap;
     position: relative;
     height: 400px;
     width: 800px;
     perspective: 600px;
     margin: 20px;
+}
+
+li.card {
+	list-style: none;
 }
