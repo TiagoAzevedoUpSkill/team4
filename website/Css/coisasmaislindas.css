@@ -103,30 +103,27 @@ footer {text-align: center;
 }
 
 .closebutton {
-<<<<<<< HEAD
- 
-=======
+
     font-size: 30px;
->>>>>>> 5e2499564c1904b22d93e13ff2750f753bee0b23
+
     margin-left: 15px;
     font-weight: bold;
     float: right;
-<<<<<<< HEAD
+
     font-size: 1.8em;
-=======
->>>>>>> 5e2499564c1904b22d93e13ff2750f753bee0b23
+
     line-height: 10px;
     cursor: pointer;
   }
 
 .covid-problems {
-<<<<<<< HEAD
+
   padding: 50px;
   font-size: 1em;
-=======
+
   padding: 20px;
   font-size: 12px;
->>>>>>> 5e2499564c1904b22d93e13ff2750f753bee0b23
+
   line-height: 20px;
   font-family: 'Work-Sans', sans-serif;
   margin-right: 200px;
@@ -140,18 +137,18 @@ footer {text-align: center;
 .Contacts {
   padding: 60px;
 }
-<<<<<<< HEAD
+
 .Contacts-Page p {
   font-size: 1.2em;
-=======
+}
 
 .mail-style {
   text-decoration: none;
   
->>>>>>> 5e2499564c1904b22d93e13ff2750f753bee0b23
+
 }
 
-<<<<<<< HEAD
+
 .maps {
   align-content: center;
 }
@@ -159,12 +156,7 @@ footer {text-align: center;
 
 
 
-/*end footer stuff*/
-=======
 
->>>>>>> e7bad902607df59044aed1e58644433b910ae1a5
-
-/*slideshow stuff*/
 
 
 
