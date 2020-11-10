@@ -75,8 +75,7 @@ footer {text-align: center;
 	flex-wrap: wrap;
     position: relative;
     height: 400px;
-    width: 800px;
-    perspective: 600px;
+    width: 400px;
     margin: 20px;
 }
 
