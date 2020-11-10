@@ -133,6 +133,7 @@ footer {text-align: center;
   
 }
 
+<<<<<<< HEAD
 .maps {
   align-content: center;
 }
@@ -141,6 +142,9 @@ footer {text-align: center;
 
 
 /*end footer stuff*/
+=======
+
+>>>>>>> e7bad902607df59044aed1e58644433b910ae1a5
 
 /*slideshow stuff*/
 
@@ -238,7 +242,6 @@ footer {text-align: center;
 
 
 
-/*end footer stuff*/
 
 /*CATALOGUE*/
 .title {
@@ -272,10 +275,15 @@ li.card {
 	font-family: Arial;
 }
 
-h2.card {
-	background: rgba(0, 0, 0, 0.75);
-	text-align: center;
-	justify-content: center;
+h2 {
+margin-top: 20px;
+    background: rgba(0, 0, 0, 0.50);
+    text-align: center;
+    justify-content: center;
+    margin: initial;
+    width: 80%;
+    padding: 24px;
+    margin-right: 38px;
 
 }
 
