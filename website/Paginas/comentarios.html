@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/website/Css/coisasmaislindas.css" />
     <script src="../Javascript/coisaslindas.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      .fa-star:hover {
+        color: orange;
+      }
+
+      #copyName {
+        height: 30px;
+        width: 60px;
+      }
+    </style>
     <title>KandyTravel</title>
   </head>
 
@@ -21,7 +35,14 @@
           placeholder="Enter your Comment Here"
         /><br />
       </form>
-      <button id="copyName" onclick="renderComment()" value="botao"></button>
+      <br />
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <br />
+      <button id="copyName" value="Print" onclick="renderComment()"></button>
       <div id="comment_card"></div>
     </div>
   </body>
